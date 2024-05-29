@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Круговая диаграмма (нарушения)</title>
+    <link rel="stylesheet" href="/pie-chart/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h3 class="header__title">Нарушения</h3>
+        <ul class="header__tabs">
+          <li class="header__tabs-item">Час</li>
+          <li class="header__tabs-item">День</li>
+          <li class="header__tabs-item">Неделя</li>
+          <li class="header__tabs-item">Месяц</li>
+          <li class="header__tabs-item">Год</li>
+        </ul>
+      </header>
+      <main>
+        <section class="chart">
+          <div class="chart__circle">
+            <h3 class="chart__circle-total">24774</h3>
+            <p class="chart__circle-text">всего событий</p>
+          </div>
+        </section>
+        <section class="violations">
+          <ul class="violations__list">
+            <li class="violations__list-item">
+              <div class="violations__list-item_name unauthorized-access">
+                <span class="label"></span>
+                Несанкционированный доступ
+              </div>
+              <div class="violations__list-item_count unauthorized-access">
+                <span class="amount">7937</span>
+                <span class="percent">32%</span>
+              </div>
+            </li>
+            <li class="violations__list-item">
+              <div class="violations__list-item_name license-plate">
+                <span class="label"></span>
+                Номерной знак
+              </div>
+              <div class="violations__list-item_count license-plate">
+                <span class="amount">7412</span>
+                <span class="percent">30%</span>
+              </div>
+            </li>
+            <li class="violations__list-item">
+              <div class="violations__list-item_name cap">
+                <span class="label"></span>
+                Чепчик (нарушение)
+              </div>
+              <div class="violations__list-item_count cap">
+                <span class="amount">4194</span>
+                <span class="percent">17%</span>
+              </div>
+            </li>
+            <li class="violations__list-item">
+              <div class="violations__list-item_name helmet">
+                <span class="label"></span>
+                Каска (нарушение)
+              </div>
+              <div class="violations__list-item_count helmet">
+                <span class="amount">1876</span>
+                <span class="percent">8%</span>
+              </div>
+            </li>
+            <li class="violations__list-item">
+              <div class="violations__list-item_name uniform">
+                <span class="label"></span>
+                Неподходящий тип спецодежды
+              </div>
+              <div class="violations__list-item_count uniform">
+                <span class="amount">954</span>
+                <span class="percent">4%</span>
+              </div>
+            </li>
+            <li class="violations__list-item">
+              <div class="violations__list-item_name other">
+                <span class="label"></span>
+                Остальное
+              </div>
+              <div class="violations__list-item_count other">
+                <span class="amount">2401</span>
+                <span class="percent">10%</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
