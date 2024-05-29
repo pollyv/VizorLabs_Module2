@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5ff;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+}
+
+.header__tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.header__tabs-item {
+  color: #c0c0c0;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.header__tabs-item:hover {
+  color: #000000;
+  border-bottom: 2px solid #000;
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.chart__circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #c793fb 0% 32%,
+    #8abdff 32% 62%,
+    #7abe79 62% 79%,
+    #fbb360 79% 87%,
+    #f5624f 87% 91%,
+    #fcd24d 91% 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.chart__circle::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.chart__circle-total {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  top: 30%;
+  z-index: 1;
+}
+
+.chart__circle-text {
+  position: absolute;
+  font-size: 12px;
+  color: #c0c0c0;
+  z-index: 1;
+  margin-top: 20px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.violations {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.violations__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.violations__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid transparent;
+  font-size: 14px;
+}
+
+.violations__list-item:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.violations__list-item_name {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.violations__list-item_count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.amount,
+.percent {
+  font-weight: bold;
+}
+
+.unauthorized-access .label {
+  background-color: #c793fb;
+}
+
+.unauthorized-access .percent {
+  color: #c793fb;
+}
+
+.license-plate .label {
+  background-color: #8abdff;
+}
+
+.license-plate .percent {
+  color: #8abdff;
+}
+
+.cap .label {
+  background-color: #7abe79;
+}
+
+.cap .percent {
+  color: #7abe79;
+}
+
+.helmet .label {
+  background-color: #fbb360;
+}
+
+.helmet .percent {
+  color: #fbb360;
+}
+
+.uniform .label {
+  background-color: #f5624f;
+}
+
+.uniform .percent {
+  color: #f5624f;
+}
+
+.other .label {
+  background-color: #fcd24d;
+}
+.other .percent {
+  color: #fcd24d;
+}
