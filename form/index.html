@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form class="form" action="" method="post">
+      <h1 class="form__title">График отправки</h1>
+      <fieldset class="form__section">
+        <label class="form__checkbox">
+          <input class="form__checkbox-input" type="checkbox" checked />Сразу
+        </label>
+        <div class="form__container">
+          <div class="form__info">
+            <h3 class="form__info-title">
+              Источники
+              <span class="form__info-title--newline">и события</span>
+            </h3>
+            <button class="form__info-btn" type="submit">
+              + Камеры и объекты
+            </button>
+            <p class="form__info-txt">
+              Выбрано
+              <span class="form__info-txt--highlight"
+                >0 источника/0 события</span
+              >
+            </p>
+          </div>
+          <label class="form__toggle">
+            <input class="form__toggle-checkbox" type="checkbox" />
+            <span class="form__toggle-slider" class="slider"></span>
+            Только подтверждённые нарушения
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form__section">
+        <label class="form__checkbox">
+          <input
+            class="form__checkbox-input"
+            type="checkbox"
+            checked
+          />Настраиваемый
+        </label>
+        <div class="form__container">
+          <h2 class="form__container-title">График №1</h2>
+          <div class="form__info">
+            <h3 class="form__info-title">
+              Источники
+              <span class="form__info-title--newline">и события</span>
+            </h3>
+            <button class="form__info-btn" type="submit">
+              + Камеры и объекты
+            </button>
+            <p class="form__info-txt">
+              Выбрано
+              <span class="form__info-txt--highlight"
+                >0 источника/0 события</span
+              >
+            </p>
+          </div>
+          <div class="form__schedule">
+            <label class="form__schedule-label">Расписание</label>
+            <div class="form__schedule-days">
+              <button class="form__schedule-day">Пн</button>
+              <button class="form__schedule-day">Вт</button>
+              <button class="form__schedule-day">Ср</button>
+              <button class="form__schedule-day">Чт</button>
+              <button class="form__schedule-day">Пт</button>
+              <button class="form__schedule-day">Сб</button>
+              <button class="form__schedule-day">Вс</button>
+            </div>
+            <input class="form__schedule-time" type="time" value="00:00" />
+          </div>
+          <label class="form__toggle">
+            <input class="form__toggle-checkbox" type="checkbox" />
+            <span class="form__toggle-slider" class="slider"></span>
+            Только подтверждённые нарушения
+          </label>
+        </div>
+      </fieldset>
+      <button class="form__add-schedule">Добавить график</button>
+    </form>
+  </body>
+</html>
