@@ -8,11 +8,11 @@ body {
 }
 
 .progress-bar {
-  width: 300px;
+  width: 350px;
   height: 40px;
+  padding: 10px;
   background-color: #000;
   border: 2px solid #fff;
-  border-radius: 5px;
   box-shadow: 0 0 10px #fff;
   overflow: hidden;
   transition: box-shadow 0.3s;
@@ -22,9 +22,8 @@ body {
 .progress {
   width: 0;
   height: 100%;
-  background-color: #ff0;
+  background: linear-gradient(to bottom, #ffd700, #f19f05);
   box-shadow: 0 0 10px #ff0;
-  border-radius: 3px 0 0 3px;
   transition: width 1s ease;
 }
 
