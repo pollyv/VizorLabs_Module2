@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>График отправки</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form class="form">
+    <form class="form" name="sending" method="#" action="#">
       <h1 class="form__title">График отправки</h1>
       <fieldset class="form__section section1">
         <label class="form__checkbox">
@@ -19,13 +19,13 @@
               Источники
               <span class="form__info-title--newline">и события</span>
             </h3>
-            <button class="form__info-btn" type="submit">
+            <button class="form__info-btn" type="button">
               + Камеры и объекты
             </button>
             <p class="form__info-txt">
               Выбрано
               <span class="form__info-txt--highlight"
-                >0 источника/0 события</span
+                >0 источника/ 0 события</span
               >
             </p>
           </div>
@@ -38,11 +38,7 @@
       </fieldset>
       <fieldset class="form__section section2">
         <label class="form__checkbox">
-          <input
-            class="form__checkbox-input"
-            type="checkbox"
-            checked
-          />Настраиваемый
+          <input class="form__checkbox-input" type="checkbox" />Настраиваемый
         </label>
         <div class="form__container">
           <div class="form__container-header">
@@ -53,26 +49,47 @@
               Источники
               <span class="form__info-title--newline">и события</span>
             </h3>
-            <button class="form__info-btn" type="submit">
+            <button class="form__info-btn" type="button">
               + Камеры и объекты
             </button>
             <p class="form__info-txt">
               Выбрано
               <span class="form__info-txt--highlight"
-                >0 источника/0 события</span
+                >0 источника/ 0 события</span
               >
             </p>
           </div>
           <div class="form__schedule">
             <label class="form__schedule-label">Расписание</label>
             <div class="form__schedule-days">
-              <button class="form__schedule-day">Пн</button>
-              <button class="form__schedule-day">Вт</button>
-              <button class="form__schedule-day">Ср</button>
-              <button class="form__schedule-day">Чт</button>
-              <button class="form__schedule-day">Пт</button>
-              <button class="form__schedule-day">Сб</button>
-              <button class="form__schedule-day">Вс</button>
+              <label class="form__schedule-day">
+                <input type="checkbox" name="day" value="Пн" />
+                Пн
+              </label>
+              <label class="form__schedule-day">
+                <input type="checkbox" name="day" value="Вт" />
+                Вт
+              </label>
+              <label class="form__schedule-day">
+                <input type="checkbox" name="day" value="Ср" />
+                Ср
+              </label>
+              <label class="form__schedule-day">
+                <input type="checkbox" name="day" value="Чт" />
+                Чт
+              </label>
+              <label class="form__schedule-day">
+                <input type="checkbox" name="day" value="Пт" />
+                Пт
+              </label>
+              <label class="form__schedule-day">
+                <input type="checkbox" name="day" value="Сб" />
+                Сб
+              </label>
+              <label class="form__schedule-day">
+                <input type="checkbox" name="day" value="Вс" />
+                Вс
+              </label>
             </div>
             <input class="form__schedule-time" type="time" value="00:00" />
           </div>
@@ -83,7 +100,7 @@
           </label>
         </div>
       </fieldset>
-      <button class="form__delete-btn">
+      <button type="button" class="form__delete-btn">
         <svg
           class="form__delete-btn-pic"
           viewBox="-47 1 511 511.999"
@@ -103,7 +120,7 @@
           ></path>
         </svg>
       </button>
-      <button class="form__add-schedule-btn">
+      <button type="button" class="form__add-schedule-btn">
         <svg
           width="18px"
           height="15px"

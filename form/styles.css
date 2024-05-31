@@ -41,13 +41,13 @@ button {
 .form {
   display: grid;
   grid-template-columns: 200px 550px 20px;
-  grid-template-rows: 30px auto auto 40px;
+  grid-template-rows: 30px auto auto 30px;
   grid-template-areas:
-    "header header header"
+    "title title title"
     "section1 section1 ."
-    "content content button"
-    ". footer .";
-  gap: 10px;
+    "section2 section2 trash"
+    ". calendar .";
+  gap: 12px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -57,7 +57,7 @@ button {
 }
 
 .form__title {
-  grid-area: header;
+  grid-area: title;
   font-size: 16px;
   font-weight: bold;
 }
@@ -73,7 +73,7 @@ button {
 }
 
 .section2 {
-  grid-area: content;
+  grid-area: section2;
 }
 
 .form__checkbox {
@@ -107,20 +107,6 @@ button {
   font-size: 14px;
   font-weight: bold;
   color: #bdbdbd;
-}
-
-.form__delete-btn {
-  grid-area: button;
-  align-self: start;
-}
-
-.form__delete-btn-pic {
-  fill: #bdbdbd;
-  transition: fill 0.3s;
-}
-
-.form__delete-btn-pic:hover {
-  fill: red;
 }
 
 .form__info {
@@ -183,16 +169,28 @@ button {
 }
 
 .form__schedule-day {
-  display: block;
-  min-width: 20px;
-  min-height: 20px;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  min-height: 30px;
   background-color: #e9ecef;
-  border: none;
   border-radius: 50%;
   font-size: 12px;
   text-align: center;
   transition: background-color 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.form__schedule-day:hover {
+  background-color: #bdbdbd;
+}
+
+.form__schedule-day input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .form__schedule-time {
@@ -202,15 +200,34 @@ button {
   transition: border-color 0.3s;
 }
 
+.form__schedule-time:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.form__delete-btn {
+  grid-area: trash;
+  align-self: start;
+}
+
+.form__delete-btn-pic {
+  fill: #bdbdbd;
+  transition: fill 0.3s;
+}
+
+.form__delete-btn-pic:hover {
+  fill: red;
+}
+
 .form__add-schedule-btn {
   display: flex;
   align-items: center;
   gap: 5px;
-  grid-area: footer;
+  grid-area: calendar;
   background-color: #fff;
   color: #28a745;
   border: 1px solid #28a745;
-  padding: 7px 12px;
+  padding: 3px 7px;
   border-radius: 5px;
   margin-right: auto;
   font-size: 12px;
