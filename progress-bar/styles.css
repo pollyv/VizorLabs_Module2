@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+}
+
+.progress-bar {
+  width: 350px;
+  height: 40px;
+  padding: 10px;
+  background-color: #000;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #fff;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffd700, #f19f05);
+  box-shadow: 0 0 10px #ff0;
+  transition: width 1s ease;
+}
+
+.progress-bar:hover .progress {
+  width: 100%;
+}
