@@ -54,7 +54,6 @@
 .hero__container {
   padding: 150px 66px;
   border-radius: 10px;
-  background-image: url(../images/hero-image.jpg);
   background: linear-gradient(
       90deg,
       rgb(0, 0, 0) 19.464%,
@@ -126,33 +125,25 @@
 .solutions {
   background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
     url(../images/expertise-solutions.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .cable {
   background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
     url(../images/expertise-servises.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .internet {
   background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
     url(../images/expertise-internet.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .phone {
   background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
     url(../images/expertise-phone.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .why-choose-us {
-  padding: 110px 151px;
+  padding: 107px 151px;
   background-color: #f4f4f4;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -179,12 +170,13 @@
   font-family: var(--text-font, "Roboto", sans-serif);
   font-size: var(--text-size, 18px);
   font-weight: var(--text-weight, 400);
+  line-height: 123%;
 }
 
 .why-choose-us__item {
   background-color: #fff;
   border-radius: 10px;
-  padding: 60px 22px 69px 29px;
+  padding: 62px 22px 69px 29px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -198,7 +190,7 @@
   font-weight: 700;
   line-height: 53%;
   letter-spacing: 0%;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 .why-choose-us__item-subtitle {
@@ -206,8 +198,7 @@
   font-family: var(--subtitle-font, "Poppins", sans-serif);
   font-size: var(--subtitle-size, 24px);
   font-weight: var(--subtitle-weight, 500);
-  line-height: 121%;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
 
 .why-choose-us__item-text {
@@ -233,4 +224,73 @@
 
 .why-choose-us__item_highlight .why-choose-us__item-text {
   color: #fff;
+}
+
+.who-we-are {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 45px 151px 100px 151px;
+  background-color: #ee0000;
+}
+
+.who-we-are__content {
+  padding: 50px 102px 0 0;
+  color: #fff;
+}
+
+.who-we-are__title {
+  font-family: var(--title-font, "Poppins", sans-serif);
+  font-size: var(--title-size, 50px);
+  font-weight: var(--title-weight, 700);
+  line-height: 170%;
+}
+
+.who-we-are__description {
+  font-family: var(--text-font, "Roboto", sans-serif);
+  font-size: var(--text-size, 18px);
+  font-weight: var(--text-weight, 400);
+  line-height: 169%;
+}
+
+.who-we-are__buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 27px;
+}
+
+.who-we-are__btn {
+  padding: 10px 32px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  line-height: 169%;
+  letter-spacing: 0%;
+}
+
+.who-we-are__btn--light {
+  background-color: #fff;
+  color: #000000;
+  font-weight: 400;
+}
+
+.who-we-are__btn--dark {
+  background-color: #333;
+  color: #fff;
+  font-weight: 500;
+}
+
+.who-we-are__images {
+  position: relative;
+}
+
+.who-we-are__image_big {
+  position: absolute;
+  top: -25px;
+}
+
+.who-we-are__image_small {
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+  left: 225px;
 }
