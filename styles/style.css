@@ -18,16 +18,13 @@
   font-family: "Poppins", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 100%;
   letter-spacing: 0%;
 }
 
 .header__logo-text_top,
 .header__logo-text_bottom {
   display: block;
-}
-
-.header__nav {
 }
 
 .header__nav-list {
@@ -38,7 +35,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  line-height: 27px;
+  line-height: 150%;
 }
 
 .header__nav-list-item-link {
@@ -50,7 +47,7 @@
 }
 
 .hero {
-  padding: 33px 77px 117px 77px;
+  padding: 33px 77px 115px 77px;
   color: #fff;
 }
 
@@ -71,11 +68,85 @@
   font-family: var(--title-font, "Poppins", sans-serif);
   font-size: 70px;
   font-weight: var(--title-weight, 700);
-  line-height: 76px;
+  line-height: 110%;
   text-transform: uppercase;
 }
 
 .hero__title-highlight {
   display: inline-block;
   color: #ee0000;
+}
+
+.expertise {
+  padding: 0 151px 114px 151px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.expertise__title {
+  color: #131313;
+  font-family: var(--title-font, "Poppins", sans-serif);
+  font-size: var(--title-size, 50px);
+  font-weight: var(--title-weight, 700);
+  line-height: 170%;
+}
+
+.expertise__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+}
+
+.expertise__list-item {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 26px 18px 240px 24px;
+  border-radius: 10px;
+}
+
+.expertise__list-item-title {
+  font-family: var(--subtitle-font, "Poppins", sans-serif);
+  font-size: var(--subtitle-size, 24px);
+  font-weight: var(--subtitle-weight, 500);
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.expertise__list-item-text {
+  font-family: var(--text-font, "Roboto", sans-serif);
+  font-size: 16px;
+  font-weight: var(--text-weight, 400);
+  line-height: 138%;
+  letter-spacing: 0%;
+}
+
+.solutions {
+  background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
+    url(../images/expertise-solutions.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cable {
+  background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
+    url(../images/expertise-servises.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.internet {
+  background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
+    url(../images/expertise-internet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.phone {
+  background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
+    url(../images/expertise-phone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
