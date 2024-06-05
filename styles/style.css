@@ -294,3 +294,92 @@
   top: 75px;
   left: 225px;
 }
+
+.our-services {
+  text-align: center;
+  padding: 95px 151px 102px 151px;
+}
+
+.our-services__subtitle {
+  color: #ee0000;
+  font-family: var(--subtitle-font, "Poppins", sans-serif);
+  font-size: 20px;
+  font-weight: var(--subtitle-weight, 700);
+  line-height: 125%;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+
+.our-services__title {
+  color: #131313;
+  font-family: var(--title-font, "Poppins", sans-serif);
+  font-size: var(--title-size, 50px);
+  font-weight: var(--title-weight, 700);
+  line-height: 135%;
+  margin-bottom: 33px;
+}
+
+.our-services__grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "solar image deals"
+    "cable image consultation";
+  gap: 35px;
+}
+
+.solar {
+  grid-area: solar;
+}
+
+.image {
+  grid-area: image;
+}
+
+.deals {
+  grid-area: deals;
+}
+
+.cableserv {
+  grid-area: cable;
+}
+
+.consultation {
+  grid-area: consultation;
+}
+
+.our-services__item {
+  background-color: #f9f9f9;
+  padding-top: 30px;
+  padding-bottom: 31px;
+  padding-left: 19px;
+  padding-right: 17px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.service-item__subtitle {
+  color: #464646;
+  font-family: var(--subtitle-font, "Poppins", sans-serif);
+  font-size: var(--subtitle-size, 24px);
+  font-weight: var(--subtitle-weight, 500);
+  line-height: 161%;
+}
+
+.service-item__description {
+  color: #787878;
+  font-family: var(--text-font, "Roboto", sans-serif);
+  font-size: var(--text-size, 18px);
+  font-weight: var(--text-weight, 400);
+  line-height: 138%;
+}
+
+.our-services__image {
+  display: flex;
+}
+
+.service-image__img {
+  justify-self: center;
+  align-self: center;
+}
