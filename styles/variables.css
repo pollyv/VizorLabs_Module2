@@ -14,4 +14,8 @@
   --text--footer-font: "Roboto", sans-serif;
   --text--footer-size: 16px;
   --text--footer-weight: 300;
+
+  --radius: 10px;
+
+  --highlight: #ee0000;
 }
