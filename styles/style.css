@@ -147,21 +147,33 @@
 .expertise__list-item_solar {
   background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
     url(../images/expertise-solar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .expertise__list-item_cable {
   background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
     url(../images/expertise-servises.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .expertise__list-item_internet {
   background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
     url(../images/expertise-internet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .expertise__list-item_phone {
   background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%),
     url(../images/expertise-phone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* why-choose-us*/
@@ -239,7 +251,7 @@
 }
 
 .why-choose-us__item_highlight {
-  background-color: #ee0000;
+  background-color: var(--highlight, #ee0000);
   color: #fff;
 }
 
