@@ -1,0 +1,15 @@
+:root {
+  --bg-color: #fbfbfd;
+
+  --text-color: #6f7cb2;
+  --text-size: 16px;
+  --text-weight: 400;
+
+  --title-color: #091133;
+  --title-size: 36px;
+  --title-weight: 500;
+
+  --button-font-weight: 500;
+  --dark-btn-text-color: #ffffff;
+  --dark-btn-bg-color: #111b47;
+}
