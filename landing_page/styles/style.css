@@ -185,3 +185,41 @@
   font-weight: var(--text-weight, 400);
   line-height: 18px;
 }
+
+/*detailes*/
+
+.detailes {
+  padding: 182px 165px 155px 165px;
+}
+
+.detaile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: url(../images/detailes_background_lotos.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 25px center;
+}
+
+.detaile__item {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  max-width: 447px;
+}
+
+.detaile__title {
+  color: var(--title-color, #091133);
+  font-size: var(--title-size, 36px);
+  font-weight: var(--title-weight, 500);
+  line-height: 48px;
+}
+
+.detaile__text {
+  color: var(--text-color, #6f7cb2);
+  font-size: var(--text-size, 16px);
+  font-weight: var(--text-weight, 400);
+  line-height: 26px;
+  letter-spacing: 0px;
+}
