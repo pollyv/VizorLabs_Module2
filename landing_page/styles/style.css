@@ -223,3 +223,67 @@
   line-height: 26px;
   letter-spacing: 0px;
 }
+
+/*pricing*/
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  background-color: #e7ecff;
+  text-align: center;
+  padding: 0 165px;
+}
+
+.pricing__title {
+  color: var(--title-color, #091133);
+  font-size: var(--title-size, 36px);
+  font-weight: var(--title-weight, 500);
+  line-height: 48px;
+}
+
+.pricing__text {
+  color: var(--text-color, #6f7cb2);
+  font-size: var(--text-size, 16px);
+  font-weight: var(--text-weight, 400);
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+
+.pricing__price {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  gap: 5px;
+}
+
+.pricing__amount {
+  color: #222f65;
+  font-size: 50px;
+  font-weight: var(--title-weight, 500);
+  line-height: 66px;
+  letter-spacing: 1px;
+}
+
+.pricing__description {
+  color: #37447e;
+  font-size: var(--text-size, 16px);
+  font-weight: var(--text-weight, 400);
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+
+.pricing__button {
+  width: fit-content;
+  background-color: var(--dark-btn-bg-color, #111b47);
+  color: var(--dark-btn-text-color, #ffffff);
+  font-size: 14px;
+  font-weight: var(--button-font-weight, 500);
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 4px 56px;
+  border-radius: 2px;
+}
