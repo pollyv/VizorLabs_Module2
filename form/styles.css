@@ -155,6 +155,60 @@ button {
   font-weight: bold;
 }
 
+.form__toggle {
+  display: flex;
+  align-items: center;
+}
+
+.form__toggle-label {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.form__toggle-checkbox {
+  display: none;
+}
+
+.form__toggle-slider {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+  background-color: #ccc;
+  border-radius: 14px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form__toggle-slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s, border-color 0.3s;
+  border: 1px solid #ccc;
+}
+
+.form__toggle-checkbox:checked + .form__toggle-slider {
+  background-color: #4caf50;
+}
+
+.form__toggle-checkbox:checked + .form__toggle-slider::before {
+  transform: translateX(20px);
+  border-color: #4caf50;
+}
+
+.form__toggle-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .form__schedule {
   display: flex;
   justify-content: start;
@@ -221,11 +275,6 @@ button {
 
 .form__schedule-time-input {
   padding: 0 10px;
-  flex-grow: 1;
-}
-
-.form__schedule-time-input:focus {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .form__delete-btn {
@@ -270,47 +319,4 @@ button {
 
 .form__add-schedule-btn:hover .form__add-schedule-btn-pic {
   fill: #fff;
-}
-
-.form__toggle {
-  display: flex;
-  align-items: center;
-}
-
-.form__toggle-checkbox {
-  display: none;
-}
-
-.form__toggle-slider {
-  position: relative;
-  display: inline-block;
-  width: 34px;
-  height: 18px;
-  background-color: #ccc;
-  border-radius: 14px;
-  margin-right: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.form__toggle-slider::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background-color: white;
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-  transition: transform 0.4s, border-color 0.3s;
-  border: 1px solid #ccc;
-}
-
-.form__toggle-checkbox:checked + .form__toggle-slider {
-  background-color: #4caf50;
-}
-
-.form__toggle-checkbox:checked + .form__toggle-slider::before {
-  transform: translateX(20px);
-  border-color: #4caf50;
 }
