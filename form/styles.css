@@ -1,0 +1,322 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+fieldset,
+label,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  display: block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 200px 550px 20px;
+  grid-template-rows: 30px auto auto 30px;
+  grid-template-areas:
+    "title title title"
+    "section1 section1 ."
+    "section2 section2 trash"
+    ". calendar .";
+  gap: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  min-width: 800px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.form__title {
+  grid-area: title;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form__section {
+  display: grid;
+  grid-template-columns: 27.5% 72.5%;
+  border: none;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.form__checkbox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form__checkbox-input {
+  align-self: flex-start;
+  margin-top: 3px;
+  margin-right: 8px;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  padding: 15px;
+  transition: border-color 0.3s;
+}
+
+.form__container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__container-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #bdbdbd;
+}
+
+.form__info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__info-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form__info-title--newline {
+  display: block;
+}
+
+.form__info-btn {
+  background-color: #eef3ff;
+  border: 1px solid #2f80ed;
+  color: #2f80ed;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-left: 16px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.form__info-btn:hover {
+  background-color: #2f80ed;
+  border-color: #eef3ff;
+  color: #eef3ff;
+}
+
+.form__info-txt {
+  font-size: 12px;
+  color: #bdbdbd;
+  margin-left: 16px;
+}
+
+.form__info-txt--highlight {
+  font-weight: bold;
+}
+
+.form__toggle {
+  display: flex;
+  align-items: center;
+}
+
+.form__toggle-label {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.form__toggle-checkbox {
+  display: none;
+}
+
+.form__toggle-slider {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+  background-color: #ccc;
+  border-radius: 14px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form__toggle-slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s, border-color 0.3s;
+  border: 1px solid #ccc;
+}
+
+.form__toggle-checkbox:checked + .form__toggle-slider {
+  background-color: #4caf50;
+}
+
+.form__toggle-checkbox:checked + .form__toggle-slider::before {
+  transform: translateX(20px);
+  border-color: #4caf50;
+}
+
+.form__toggle-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form__schedule {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+.form__schedule-label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form__schedule-days {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.form__schedule-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.form__schedule-day:hover {
+  background-color: #bdbdbd;
+}
+
+.form__schedule-day input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form__schedule-time {
+  border-radius: 5px;
+  border: 1px solid #e9ecef;
+  transition: border-color 0.3s, box-shadow 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #bdbdbd;
+  padding: 2px;
+}
+
+.form__schedule-time:hover {
+  border-color: #000;
+  color: #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form__schedule-time-legend {
+  margin-right: 10px;
+}
+
+.form__schedule-time-input {
+  padding: 0 10px;
+}
+
+.form__delete-btn {
+  grid-area: trash;
+  align-self: start;
+}
+
+.form__delete-btn-pic {
+  fill: #bdbdbd;
+  transition: fill 0.3s;
+}
+
+.form__delete-btn-pic:hover {
+  fill: red;
+}
+
+.form__add-schedule-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  grid-area: calendar;
+  background-color: #fff;
+  color: #28a745;
+  border: 1px solid #28a745;
+  padding: 3px 7px;
+  border-radius: 5px;
+  margin-right: auto;
+  font-size: 12px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s, fill 0.3s;
+}
+
+.form__add-schedule-btn:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.form__add-schedule-btn-pic {
+  display: block;
+  fill: #28a745;
+  transition: fill 0.3s;
+}
+
+.form__add-schedule-btn:hover .form__add-schedule-btn-pic {
+  fill: #fff;
+}
