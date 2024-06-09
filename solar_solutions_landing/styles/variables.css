@@ -1,0 +1,21 @@
+:root {
+  --title-font: "Poppins", sans-serif;
+  --title-size: 50px;
+  --title-weight: 700;
+
+  --subtitle-font: "Poppins", sans-serif;
+  --subtitle-size: 24px;
+  --subtitle-weight: 700;
+
+  --text-font: "Roboto", sans-serif;
+  --text-size: 18px;
+  --text-weight: 400;
+
+  --text--footer-font: "Roboto", sans-serif;
+  --text--footer-size: 16px;
+  --text--footer-weight: 300;
+
+  --radius: 10px;
+
+  --highlight: #ee0000;
+}
