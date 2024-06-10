@@ -20,10 +20,12 @@
   line-height: 24px;
   text-align: left;
   border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
   border-bottom: 1px solid #505f98;
+  color: #37447e;
 }
 
 .header__logo {
@@ -42,16 +44,24 @@
   align-items: center;
 }
 
-.cta-button {
-  background-color: var(--dark-btn-bg-color, #111b47);
-  color: var(--dark-btn-text-color, #fff);
-  font-size: 12px;
+.button {
   font-weight: var(--button-font-weight, 500);
+  color: var(--dark-btn-text-color, #ffffff);
+  background-color: var(--dark-btn-bg-color, #111b47);
+  border-radius: 2px;
+}
+
+.cta-button {
+  font-size: 12px;
   line-height: 18px;
-  letter-spacing: 0px;
   text-align: center;
   padding: 4px 56px;
-  border-radius: 2px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #37447e;
+  color: #e7ecff;
 }
 
 /* Background Container */
@@ -97,17 +107,18 @@
 }
 
 .hero__button {
-  border-radius: 2px;
   font-size: 16px;
-  font-weight: var(--button-font-weight, 500);
   line-height: 26px;
   text-align: center;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .hero__button--primary {
   padding: 4px 39px;
-  background-color: var(--dark-btn-bg-color, #111b47);
-  color: var(--dark-btn-text-color, #ffffff);
+}
+
+.hero__button--primary:hover {
+  background-color: #37447e;
 }
 
 .hero__button--secondary {
@@ -115,6 +126,12 @@
   background-color: transparent;
   color: var(--title-color, #091133);
   border: 2px solid var(--title-color, #091133);
+}
+
+.hero__button--secondary:hover {
+  background-color: #091133;
+  color: #ffffff;
+  border-color: #091133;
 }
 
 /* Features */
@@ -166,6 +183,11 @@
   flex-direction: column;
   align-items: left;
   gap: 11px;
+  transition: color 0.3s;
+}
+
+.features__icon:hover {
+  color: #37447e;
 }
 
 .features__icon-title {
@@ -244,16 +266,16 @@
 }
 
 .detaile__button {
-  background-color: var(--dark-btn-bg-color, #111b47);
-  color: var(--dark-btn-text-color, #fff);
   font-size: 14px;
-  font-weight: var(--button-font-weight, 500);
   line-height: 18px;
-  letter-spacing: 0px;
   text-align: center;
   padding: 8px 28px;
-  border-radius: 2px;
   width: fit-content;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.detaile__button:hover {
+  background-color: #37447e;
 }
 
 /* Pricing */
@@ -262,9 +284,11 @@
   flex-direction: column;
   align-self: center;
   justify-content: center;
-  background: rgb(231, 236, 255, 0.5);
+  background: url(../images/prising_background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 265px 165px 310px 165px;
+  padding: 265px 165px 180px 165px;
 }
 
 .pricing__title {
@@ -275,7 +299,7 @@
   margin-bottom: 17px;
 }
 
-.pricing__text {
+.pricing__description {
   color: var(--text-color, #6f7cb2);
   font-size: var(--text-size, 16px);
   font-weight: var(--text-weight, 400);
@@ -300,7 +324,7 @@
   letter-spacing: 1px;
 }
 
-.pricing__description {
+.pricing__detailes {
   color: #37447e;
   font-size: var(--text-size, 16px);
   font-weight: var(--text-weight, 400);
@@ -319,27 +343,26 @@
   color: #5d6970;
   font-family: Roboto;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--text-weight, 400);
   line-height: 24px;
 }
 
 .pricing__button {
-  width: fit-content;
-  background-color: var(--dark-btn-bg-color, #111b47);
-  color: var(--dark-btn-text-color, #ffffff);
   font-size: 14px;
-  font-weight: var(--button-font-weight, 500);
   line-height: 24px;
-  letter-spacing: 0px;
   text-align: center;
   padding: 4px 50px;
-  border-radius: 2px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pricing__button:hover {
+  background-color: #37447e;
 }
 
 /* Footer */
 .footer {
   background-color: #e7ecff;
-  padding: 68px 161px 32px 161px;
+  padding: 53px 161px 32px 161px;
 }
 
 .footer__top {
@@ -355,6 +378,16 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+}
+
+.footer__cta-button {
+  padding: 5px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer__cta-button:hover {
+  background-color: #37447e;
+  color: #e7ecff;
 }
 
 .footer__bottom {
