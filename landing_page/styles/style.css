@@ -1,5 +1,4 @@
-/*header*/
-
+/* Header */
 .header {
   display: flex;
   align-items: center;
@@ -55,8 +54,7 @@
   border-radius: 2px;
 }
 
-/*background__container*/
-
+/* Background Container */
 .background__container {
   background: url(../images/background_image.png);
   background-size: contain;
@@ -64,8 +62,7 @@
   background-position: right center;
 }
 
-/*hero*/
-
+/* Hero */
 .hero {
   padding: 242px 165px 395px 165px;
 }
@@ -120,8 +117,7 @@
   border: 2px solid var(--title-color, #091133);
 }
 
-/*features*/
-
+/* Features */
 .features {
   display: flex;
   justify-content: space-between;
@@ -186,20 +182,31 @@
   line-height: 18px;
 }
 
-/*detailes*/
-
+/* Details */
 .detailes {
-  padding: 182px 165px 155px 165px;
+  padding-left: 165px;
+  padding-right: 165px;
 }
 
 .detaile {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  background: url(../images/detailes_background_lotos.png);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: 25px center;
+  justify-content: space-between;
+}
+
+.detaile__lotos {
+  padding-top: 134px;
+  padding-bottom: 130px;
+}
+
+.detaile__phone {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.detaile__email-lotos {
+  padding-top: 135px;
+  padding-bottom: 135px;
 }
 
 .detaile__item {
@@ -207,6 +214,18 @@
   flex-direction: column;
   gap: 17px;
   max-width: 447px;
+}
+
+.detaile__item-email-lotos {
+  gap: 30px;
+}
+
+.detaile__lotos-image-pic {
+  padding-left: 25px;
+}
+
+.detaile__email-lotos-image-pic {
+  padding-left: 40px;
 }
 
 .detaile__title {
@@ -224,8 +243,20 @@
   letter-spacing: 0px;
 }
 
-/*pricing*/
+.detaile__button {
+  background-color: var(--dark-btn-bg-color, #111b47);
+  color: var(--dark-btn-text-color, #fff);
+  font-size: 14px;
+  font-weight: var(--button-font-weight, 500);
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 8px 28px;
+  border-radius: 2px;
+  width: fit-content;
+}
 
+/* Pricing */
 .pricing {
   display: flex;
   flex-direction: column;
@@ -233,7 +264,7 @@
   justify-content: center;
   background: rgb(231, 236, 255, 0.5);
   text-align: center;
-  padding: 0 165px;
+  padding: 265px 165px 310px 165px;
 }
 
 .pricing__title {
@@ -241,6 +272,7 @@
   font-size: var(--title-size, 36px);
   font-weight: var(--title-weight, 500);
   line-height: 48px;
+  margin-bottom: 17px;
 }
 
 .pricing__text {
@@ -248,7 +280,7 @@
   font-size: var(--text-size, 16px);
   font-weight: var(--text-weight, 400);
   line-height: 26px;
-  letter-spacing: 0px;
+  margin-bottom: 34px;
 }
 
 .pricing__price {
@@ -256,7 +288,8 @@
   flex-direction: column;
   align-self: center;
   justify-self: center;
-  gap: 5px;
+  gap: 2px;
+  margin-bottom: 65px;
 }
 
 .pricing__amount {
@@ -275,6 +308,21 @@
   letter-spacing: 0px;
 }
 
+.pricing__purchase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.pricing__purchase-description {
+  color: #5d6970;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .pricing__button {
   width: fit-content;
   background-color: var(--dark-btn-bg-color, #111b47);
@@ -284,12 +332,11 @@
   line-height: 24px;
   letter-spacing: 0px;
   text-align: center;
-  padding: 4px 56px;
+  padding: 4px 50px;
   border-radius: 2px;
 }
 
-/*footer*/
-
+/* Footer */
 .footer {
   background-color: #e7ecff;
   padding: 68px 161px 32px 161px;
